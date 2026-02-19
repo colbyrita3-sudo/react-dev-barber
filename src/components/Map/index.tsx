@@ -13,3 +13,19 @@ export const Map = () => {
           {/* Replace the src below with your real Google Maps embed link later */}
           <iframe
             title="Golden Touch Location"
+            src="https://www.google.com/maps?q=Orlando,+FL&output=embed"
+            width="100%"
+            height="350"
+            style={{ border: 0, borderRadius: "12px" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+        <p style={{ textAlign: "center", marginTop: "16px" }}>
+          Mon–Fri 10:00 AM – 6:30 PM • Sat 10:00 AM – 5:30 PM • Sun Closed
+        </p>
+      </div>
+    </section>
+  );
+};
