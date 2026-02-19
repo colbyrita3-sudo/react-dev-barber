@@ -3,12 +3,27 @@ export const Services = () => {
     "https://booksy.com/en-us/1447388_hudsons-barbershop_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnH3Loqm69FZRpimvAb17A3QZIjoxw_twJgbMNA9YYLfUXBZJFFIxspu9TMT0Ul-IlubUcQ4BCNmM_3eh9gUaG7vN_dDvw%3D%3D#ba_s=seo";
 
   const services = [
-    { name: "Male Haircut", price: "$30", time: "40 min", img: "/service1.webp" },
-    { name: "Haircut + Beard", price: "$40", time: "45 min", img: "/service2.webp" },
-    { name: "Senior's Haircut", price: "$25", time: "30 min", img: "/service3.webp" },
-    { name: "Kid's Haircut", price: "$25", time: "30 min", img: "/service1.webp" },
-    { name: "Men's Cut & Blowdry", price: "$40", time: "40 min", img: "/service2.webp" },
-    { name: "Men's Cut & Color", price: "$95+", time: "1 hr 30 min", img: "/service3.webp" },
+    {
+      name: "Male Haircut",
+      price: "$30",
+      time: "40 min",
+      img: "/service1.webp",
+      note: "Clean fade, sharp line-up, finished styling.",
+    },
+    {
+      name: "Haircut + Beard",
+      price: "$40",
+      time: "45 min",
+      img: "/service2.webp",
+      note: "Full cut plus beard shape-up and detail work.",
+    },
+    {
+      name: "Men's Cut & Color",
+      price: "$95+",
+      time: "1 hr 30 min",
+      img: "/service3.webp",
+      note: "Premium service. Consultation included.",
+    },
   ];
 
   return (
@@ -17,7 +32,7 @@ export const Services = () => {
         <h2>Services</h2>
 
         <p style={{ maxWidth: "820px", margin: "10px auto 0", textAlign: "center" }}>
-          Clean cuts, sharp line-ups, beard work, and style services — done right.
+          Our most requested services — built for clean, consistent results.
           <strong> Walk-ins accepted</strong> when available. Appointments recommended.
         </p>
 
@@ -33,14 +48,14 @@ export const Services = () => {
           style={{
             display: "grid",
             gap: "16px",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           }}
         >
           {services.map((s, idx) => (
             <div
               key={idx}
               data-aos="fade-up"
-              data-aos-delay={120 + idx * 80}
+              data-aos-delay={120 + idx * 120}
               style={{
                 borderRadius: "16px",
                 overflow: "hidden",
@@ -51,7 +66,7 @@ export const Services = () => {
               <img
                 src={s.img}
                 alt={s.name}
-                style={{ width: "100%", height: "160px", objectFit: "cover" }}
+                style={{ width: "100%", height: "190px", objectFit: "cover" }}
               />
 
               <div style={{ padding: "14px 14px 16px" }}>
@@ -60,11 +75,17 @@ export const Services = () => {
                   <strong style={{ color: "white" }}>{s.price}</strong>
                 </div>
 
-                <p style={{ marginTop: "6px", color: "white", opacity: 0.85 }}>{s.time}</p>
+                <p style={{ marginTop: "6px", color: "white", opacity: 0.85 }}>
+                  {s.time}
+                </p>
 
-                <div style={{ marginTop: "12px" }}>
+                <p style={{ marginTop: "10px", color: "white", opacity: 0.9 }}>
+                  {s.note}
+                </p>
+
+                <div style={{ marginTop: "14px" }}>
                   <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
-                    Book This
+                    Book Now
                   </a>
                 </div>
               </div>
