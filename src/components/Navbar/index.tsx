@@ -40,7 +40,7 @@ export const Navbar = () => {
   className="header-button"
   target="_blank"
   rel="noreferrer"
-  href="YOUR_BOOKSY_LINK_HERE"
+  href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
 >
   BOOK NOW
 </a>
