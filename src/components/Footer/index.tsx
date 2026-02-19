@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-content">
-        <h2>Golden Touch Barber Studio</h2>
+        <h2>Golden Touch Barber Lounge</h2>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
           995 W Orange Blossom Trail, Apopka, FL 32712
@@ -13,11 +13,29 @@ export const Footer = () => {
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
-          Walk-ins welcome when available • Appointments recommended
+          Walk-ins welcome • Appointments recommended
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
           Mon–Fri 10:00 AM – 6:30 PM • Sat 10:00 AM – 5:30 PM • Sun Closed
+        </p>
+
+        <p style={{ textAlign: "center", marginTop: "12px" }}>
+          <a
+            href="https://www.instagram.com/gt_barberlounge/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>{" "}
+          •{" "}
+          <a
+            href="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Facebook
+          </a>
         </p>
       </div>
     </footer>
