@@ -42,7 +42,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* HERO (background now matches Reviews exactly) */}
+      {/* HERO (EXACT same background as Reviews) */}
       <section
         style={{
           position: "relative",
@@ -51,16 +51,6 @@ export const Navbar = () => {
           overflow: "hidden",
         }}
       >
-        {/* Subtle dark overlay only (NO background photo here) */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.70))",
-            pointerEvents: "none",
-          }}
-        />
-
         <div
           className="container"
           style={{
@@ -71,7 +61,7 @@ export const Navbar = () => {
             alignItems: "center",
           }}
         >
-          {/* LEFT: Text */}
+          {/* LEFT */}
           <div data-aos="fade-up" data-aos-delay="200">
             <h1 style={{ color: "white", fontSize: "44px", lineHeight: 1.1 }}>
               Hudsons Barbershop
@@ -150,7 +140,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Responsive (mobile) */}
+        {/* Responsive */}
         <style>
           {`
             @media (max-width: 900px) {
