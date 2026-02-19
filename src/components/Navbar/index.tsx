@@ -4,7 +4,7 @@ export const Navbar = () => {
             <nav className="header-content container">
                <div className="header-icons" data-aos="fade-down">
   <a
-    href="https://www.instagram.com/gt_barberlounge"
+    href="https://www.instagram.com/gt_barberlounge/"
     target="_blank"
     rel="noreferrer"
   >
