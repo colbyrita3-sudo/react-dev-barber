@@ -1,10 +1,11 @@
 import { useEffect } from "react";
-import { Header } from "./components/Header"
+import { Header } from "./components/Header";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import "./styles/style.css";
 import { About } from "./components/About";
 import { Services } from "./components/Services";
+import { Reviews } from "./components/Reviews";
 import { Map } from "./components/Map";
 import { Footer } from "./components/Footer";
 import { BtnWhatsapp } from "./components/Whatsapp";
@@ -17,10 +18,12 @@ function App() {
   return (
     <>
       <Header />
-      
+
       <About />
 
       <Services />
+
+      <Reviews />
 
       <Map />
 
@@ -28,7 +31,7 @@ function App() {
 
       <BtnWhatsapp />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
