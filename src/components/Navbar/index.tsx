@@ -6,6 +6,7 @@ export const Navbar = () => {
 
   return (
     <div>
+      {/* TOP NAV */}
       <nav className="header-content container">
         <div className="header-icons" data-aos="fade-down">
           <a
@@ -41,139 +42,22 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* HERO (now matches the rest of the site) */}
-      {/* HERO (EXACT match to Reviews background) */}
-<section
-  style={{
-    position: "relative",
-    padding: "56px 0 44px",
-    background: "linear-gradient(180deg, #06101d 0%, #061a2a 100%)",
-    overflow: "hidden",
-  }}
->
-  <div
-    className="container"
-    style={{
-      position: "relative",
-      display: "grid",
-      gridTemplateColumns: "1.15fr 0.85fr",
-      gap: "26px",
-      alignItems: "center",
-    }}
-  >
-    {/* LEFT */}
-    <div data-aos="fade-up" data-aos-delay="200">
-      <h1 style={{ color: "white", fontSize: "44px", lineHeight: 1.1 }}>
-        Hudsons Barbershop
-      </h1>
-
-      <p style={{ color: "white", opacity: 0.92, marginTop: "14px", fontSize: "17px" }}>
-        Clean cuts. Sharp line-ups. Beard detail.
-        <br />
-        A relaxed, professional vibe — and consistent results.
-      </p>
-
-      <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "18px" }}>
-        <a
-          className="header-button"
-          target="_blank"
-          rel="noreferrer"
-          href={BOOKSY}
-          style={{ display: "inline-block" }}
-        >
-          Book on Booksy
-        </a>
-
-        <a className="header-button" href={PHONE} style={{ display: "inline-block" }}>
-          Call Now
-        </a>
-      </div>
-
-      {/* Trust bar */}
-      <div
+      {/* HERO (background now matches Reviews exactly) */}
+      <section
         style={{
-          marginTop: "18px",
-          padding: "12px 14px",
-          borderRadius: "14px",
-          border: "1px solid rgba(255,255,255,0.14)",
-          background: "rgba(255,255,255,0.06)",
-          color: "white",
-          opacity: 0.95,
-          display: "grid",
-          gap: "6px",
-        }}
-      >
-        <div style={{ fontWeight: 600 }}>
-          Walk-ins accepted <span style={{ opacity: 0.85 }}>(when available)</span>
-        </div>
-        <div style={{ opacity: 0.9 }}>
-          Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed • Mon Closed • Tue 11–6 • Wed 11–6
-        </div>
-        <div style={{ opacity: 0.9 }}>
-          515 N Park Ave STE 101, Apopka, FL 32712
-        </div>
-      </div>
-    </div>
-
-    {/* RIGHT image card (still uses hero.webp) */}
-    <div data-aos="fade-up" data-aos-delay="350">
-      <div
-        style={{
-          borderRadius: "18px",
+          position: "relative",
+          padding: "56px 0 44px",
+          background: "linear-gradient(180deg, #06101d 0%, #061a2a 100%)",
           overflow: "hidden",
-          border: "1px solid rgba(255,255,255,0.14)",
-          background: "rgba(255,255,255,0.06)",
         }}
       >
-        <img
-          src="/hero.webp"
-          alt="Hudsons Barbershop"
-          style={{ width: "100%", height: "280px", objectFit: "cover" }}
-        />
-        <div style={{ padding: "12px 14px", color: "white", opacity: 0.92 }}>
-          <strong>Appointments recommended</strong>
-          <div style={{ marginTop: "4px", opacity: 0.85 }}>
-            Tap Book Now or call to lock in your time.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* Responsive */}
-  <style>
-    {`
-      @media (max-width: 900px) {
-        .container {
-          grid-template-columns: 1fr !important;
-        }
-      }
-    `}
-  </style>
-</section>
-
-        {/* Optional background photo: public/hero.webp (kept subtle so it doesn't change the theme color) */}
+        {/* Subtle dark overlay only (NO background photo here) */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage: "url(/hero.webp)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.10,
-          }}
-        />
-
-        {/* Overlay + subtle glow (kept in the same palette) */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: `
-              radial-gradient(circle at 15% 20%, rgba(50,211,201,0.10), transparent 55%),
-              radial-gradient(circle at 85% 10%, rgba(30,166,255,0.08), transparent 55%),
-              linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75))
-            `,
+            background: "linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.70))",
+            pointerEvents: "none",
           }}
         />
 
@@ -187,7 +71,7 @@ export const Navbar = () => {
             alignItems: "center",
           }}
         >
-          {/* LEFT */}
+          {/* LEFT: Text */}
           <div data-aos="fade-up" data-aos-delay="200">
             <h1 style={{ color: "white", fontSize: "44px", lineHeight: 1.1 }}>
               Hudsons Barbershop
@@ -241,7 +125,7 @@ export const Navbar = () => {
             </div>
           </div>
 
-          {/* RIGHT image card */}
+          {/* RIGHT: Hero card image stays */}
           <div data-aos="fade-up" data-aos-delay="350">
             <div
               style={{
@@ -252,8 +136,8 @@ export const Navbar = () => {
               }}
             >
               <img
-                src="hero.webp"
-                alt="Hudsons Barbershop haircut"
+                src="/hero.webp"
+                alt="Hudsons Barbershop"
                 style={{ width: "100%", height: "280px", objectFit: "cover" }}
               />
               <div style={{ padding: "12px 14px", color: "white", opacity: 0.92 }}>
@@ -266,11 +150,11 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Responsive */}
+        {/* Responsive (mobile) */}
         <style>
           {`
             @media (max-width: 900px) {
-              section[style*="grid-template-columns: 1.15fr 0.85fr"] .container {
+              .container {
                 grid-template-columns: 1fr !important;
               }
             }
