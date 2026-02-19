@@ -1,1 +1,65 @@
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220">
+  <defs>
+    <!-- premium “metal” gradient -->
+    <linearGradient id="silver" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8eef7"/>
+      <stop offset="0.45" stop-color="#b8c4d6"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+
+    <!-- subtle teal accent -->
+    <linearGradient id="teal" x1="0" x2="1">
+      <stop offset="0" stop-color="#32d3c9"/>
+      <stop offset="1" stop-color="#1ea6ff"/>
+    </linearGradient>
+
+    <!-- soft glow -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- transparent background so it sits clean on your site -->
+  <g>
+    <!-- emblem -->
+    <g transform="translate(40,34)">
+      <rect x="0" y="0" rx="22" ry="22" width="152" height="152" fill="rgba(255,255,255,0.04)" stroke="url(#silver)" stroke-width="3"/>
+      <path d="M76 30c18 0 32 14 32 32v36c0 18-14 32-32 32S44 116 44 98V62c0-18 14-32 32-32z"
+            fill="none" stroke="url(#silver)" stroke-width="3" opacity="0.9"/>
+      <text x="76" y="95" text-anchor="middle"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="56" fill="url(#silver)" filter="url(#glow)">H</text>
+      <rect x="28" y="118" width="96" height="4" fill="url(#teal)" opacity="0.9"/>
+      <text x="76" y="140" text-anchor="middle"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="12" fill="#d6deea" opacity="0.9" letter-spacing="2">APOPKA</text>
+    </g>
+
+    <!-- wordmark -->
+    <g transform="translate(220,70)">
+      <text x="0" y="0"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="52" fill="url(#silver)" letter-spacing="2">
+        Hudsons
+      </text>
+
+      <text x="2" y="44"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="18" fill="#eaf0f8" opacity="0.9" letter-spacing="6">
+        BARBERSHOP
+      </text>
+
+      <rect x="2" y="60" width="310" height="3" fill="url(#teal)" opacity="0.85"/>
+
+      <text x="2" y="86"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="13" fill="#cfd8e6" opacity="0.85">
+        Walk-ins accepted • Appointments recommended
+      </text>
+    </g>
+  </g>
+</svg>
