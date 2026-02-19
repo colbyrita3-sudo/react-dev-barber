@@ -34,7 +34,7 @@ export const Navbar = () => {
                 </div>
             </nav>
             <main className="hero container" data-aos="fade-up" data-aos-delay="400">
-                <h1>Golden Touch Barber Studio.</h1>
+                <h1>Golden Touch Barber Studio</h1>
                 <p>Private, luxury grooming — precision cuts, clean fades, and beard artistry.</p>
                 <a
   className="header-button"
