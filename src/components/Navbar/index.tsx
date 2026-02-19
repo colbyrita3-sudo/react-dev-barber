@@ -1,23 +1,18 @@
 export const Navbar = () => {
+  const BOOKSY =
+    "https://booksy.com/en-us/1447388_hudsons-barbershop_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnH3Loqm69FZRpimvAb17A3QZIjoxw_twJgbMNA9YYLfUXBZJFFIxspu9TMT0Ul-IlubUcQ4BCNmM_3eh9gUaG7vN_dDvw%3D%3D#ba_s=seo";
+
   return (
     <div>
       <nav className="header-content container">
         {/* Social Icons */}
         <div className="header-icons" data-aos="fade-down">
           <a
-            href="https://www.instagram.com/gt_barberlounge/"
+            href="https://www.instagram.com/hudsons_barbershop25/"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-brands fa-instagram fa-2x"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-facebook fa-2x"></i>
           </a>
         </div>
 
@@ -28,7 +23,7 @@ export const Navbar = () => {
             data-aos-delay="300"
             data-aos-duration="1500"
             src="/logo.svg"
-            alt="Golden Touch Barber Studio logo"
+            alt="Hudsons Barbershop logo"
           />
         </div>
 
@@ -37,44 +32,44 @@ export const Navbar = () => {
           data-aos="fade-down"
           style={{ display: "flex", gap: "12px", alignItems: "center" }}
         >
-          <a
-            className="header-button"
-            target="_blank"
-            rel="noreferrer"
-            href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
-          >
+          <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
             Book Now
           </a>
 
-          <a className="header-button" href="tel:+14075575702">
-            Call (407) 557-5702
+          <a className="header-button" href="tel:+14074101316">
+            Call (407) 410-1316
           </a>
         </div>
       </nav>
 
       {/* HERO SECTION */}
       <main className="hero container" data-aos="fade-up" data-aos-delay="400">
-        <h1>Golden Touch Barber Lounge</h1>
+        <h1>Hudsons Barbershop</h1>
 
         <p>
-          Modern barber shop in Apopka, FL — clean fades, sharp line-ups, and
-          beard work. Walk-ins welcome. Appointments recommended.
+          Apopka’s go-to spot for clean cuts, sharp line-ups, and beard work done
+          right. <strong>Walk-ins accepted</strong> — appointments recommended to
+          lock in your time.
         </p>
 
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-          <a
-            className="header-button"
-            target="_blank"
-            rel="noreferrer"
-            href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
-          >
+          <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
             BOOK NOW
           </a>
 
-          <a className="header-button" href="tel:+14075575702">
-            CALL (407) 557-5702
+          <a className="header-button" href="tel:+14074101316">
+            CALL (407) 410-1316
           </a>
         </div>
+
+        <p style={{ marginTop: "14px" }}>
+          515 N Park Ave STE 101, Apopka, FL 32712
+        </p>
+
+        <p style={{ marginTop: "8px" }}>
+          Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed • Mon Closed • Tue 11–6 • Wed
+          11–6
+        </p>
       </main>
     </div>
   );
