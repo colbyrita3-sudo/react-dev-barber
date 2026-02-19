@@ -27,28 +27,48 @@ export const Services = () => {
   ];
 
   return (
-    <section className="services">
-      <div className="services-content container">
-        <h2>Services</h2>
+    <section
+      className="services"
+      style={{
+        background: "linear-gradient(180deg, #07111f 0%, #071a2a 100%)",
+        padding: "56px 0",
+      }}
+    >
+      <div className="container">
+        <h2 style={{ textAlign: "center", color: "white" }}>Services</h2>
 
-        <p style={{ maxWidth: "820px", margin: "10px auto 0", textAlign: "center" }}>
+        <p
+          style={{
+            maxWidth: "820px",
+            margin: "10px auto 0",
+            textAlign: "center",
+            color: "white",
+            opacity: 0.9,
+          }}
+        >
           Our most requested services — built for clean, consistent results.
           <strong> Walk-ins accepted</strong> when available. Appointments recommended.
         </p>
 
         <div style={{ textAlign: "center", marginTop: "18px" }}>
-          <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
+          <a
+            className="header-button"
+            target="_blank"
+            rel="noreferrer"
+            href={BOOKSY}
+            style={{ display: "inline-block" }}
+          >
             View full menu / Book on Booksy
           </a>
         </div>
-      </div>
 
-      <div className="container" style={{ marginTop: "26px" }}>
+        {/* 3-up desktop, 2-up tablet, 1-up mobile */}
         <div
           style={{
             display: "grid",
-            gap: "16px",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gap: "18px",
+            marginTop: "28px",
+            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
           }}
         >
           {services.map((s, idx) => (
@@ -60,7 +80,7 @@ export const Services = () => {
                 borderRadius: "16px",
                 overflow: "hidden",
                 background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.12)",
+                border: "1px solid rgba(255,255,255,0.14)",
               }}
             >
               <img
@@ -70,9 +90,16 @@ export const Services = () => {
               />
 
               <div style={{ padding: "14px 14px 16px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}>
-                  <strong style={{ color: "white" }}>{s.name}</strong>
-                  <strong style={{ color: "white" }}>{s.price}</strong>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "10px",
+                    color: "white",
+                  }}
+                >
+                  <strong>{s.name}</strong>
+                  <strong>{s.price}</strong>
                 </div>
 
                 <p style={{ marginTop: "6px", color: "white", opacity: 0.85 }}>
@@ -84,7 +111,13 @@ export const Services = () => {
                 </p>
 
                 <div style={{ marginTop: "14px" }}>
-                  <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
+                  <a
+                    className="header-button"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={BOOKSY}
+                    style={{ display: "inline-block" }}
+                  >
                     Book Now
                   </a>
                 </div>
@@ -93,7 +126,23 @@ export const Services = () => {
           ))}
         </div>
 
-        <p style={{ textAlign: "center", marginTop: "20px", color: "white", opacity: 0.9 }}>
+        {/* Responsive tweak without touching your CSS files */}
+        <style>
+          {`
+            @media (max-width: 920px) {
+              .services .container > div[style*="grid-template-columns: repeat(3"] {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+              }
+            }
+            @media (max-width: 620px) {
+              .services .container > div[style*="grid-template-columns: repeat(3"] {
+                grid-template-columns: 1fr !important;
+              }
+            }
+          `}
+        </style>
+
+        <p style={{ textAlign: "center", marginTop: "22px", color: "white", opacity: 0.92 }}>
           Prefer to call?{" "}
           <a href="tel:+14074101316" style={{ color: "white", textDecoration: "underline" }}>
             (407) 410-1316
