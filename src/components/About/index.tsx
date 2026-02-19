@@ -3,7 +3,7 @@ export const About = () => {
     <section className="about">
       <div className="container about-content">
         <div data-aos="zoom-in" data-aos-delay="100">
-          <img src="/images.svg" alt="Golden Touch Barber Studio" />
+          <img src="/images.svg" alt="Barber tools" />
         </div>
 
         <div
@@ -11,24 +11,29 @@ export const About = () => {
           data-aos="zoom-out-left"
           data-aos-delay="250"
         >
-          <h2>About Golden Touch</h2>
+          <h2>About Hudsons Barbershop</h2>
 
           <p>
-            Golden Touch is a modern barber shop built for clean results and a
-            great experience. Whether you’re coming in for a sharp fade, a clean
-            line-up, or beard work that actually lasts — we focus on detail,
-            consistency, and service.
+            Hudsons Barbershop is built on consistent results and a relaxed,
+            professional vibe. Whether you’re coming in for a fresh cut, a beard
+            clean-up, or a full style service — we focus on detail, cleanliness,
+            and making sure you leave looking right.
           </p>
 
           <p>
-            We accept <strong>walk-ins</strong> when available, and appointments
-            are always recommended for the smoothest experience.
+            <strong>Walk-ins accepted</strong> when available. Appointments are
+            recommended for the quickest service.
           </p>
 
           <p>
-            <strong>Hours:</strong> Mon–Fri <strong>10:00 AM</strong> –{" "}
-            <strong>6:30 PM</strong> • Sat <strong>10:00 AM</strong> –{" "}
-            <strong>5:30 PM</strong> • Sun <strong>Closed</strong>
+            <strong>Address:</strong> 515 N Park Ave STE 101, Apopka, FL 32712
+            <br />
+            <strong>Phone:</strong> (407) 410-1316
+          </p>
+
+          <p>
+            <strong>Hours:</strong> Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed •
+            Mon Closed • Tue 11–6 • Wed 11–6
           </p>
         </div>
       </div>
