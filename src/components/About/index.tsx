@@ -27,4 +27,11 @@ export const About = () => {
 
           <p>
             <strong>Hours:</strong> Mon–Fri <strong>10:00 AM</strong> –{" "}
-            <strong>6:30 PM</st
+            <strong>6:30 PM</strong> • Sat <strong>10:00 AM</strong> –{" "}
+            <strong>5:30 PM</strong> • Sun <strong>Closed</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
