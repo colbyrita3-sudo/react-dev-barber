@@ -46,11 +46,12 @@ export const Navbar = () => {
         style={{
           position: "relative",
           padding: "56px 0 44px",
-          background: "linear-gradient(180deg, #050b12 0%, #071a2a 100%)",
+          // NEW: matches your other dark sections better
+          background: "linear-gradient(180deg, #06101d 0%, #071a2a 55%, #07111f 100%)",
           overflow: "hidden",
         }}
       >
-        {/* Background image (optional). If it exists: public/hero.webp */}
+        {/* Optional background photo */}
         <div
           style={{
             position: "absolute",
@@ -58,17 +59,20 @@ export const Navbar = () => {
             backgroundImage: "url(/hero.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.18,
-            filter: "blur(0px)",
+            opacity: 0.12,
           }}
         />
-        {/* Dark overlay to keep text readable */}
+
+        {/* NEW: smoother overlay + subtle teal glow */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background:
-              "radial-gradient(circle at 20% 10%, rgba(50,211,201,0.15), transparent 55%), linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75))",
+            background: `
+              radial-gradient(circle at 15% 20%, rgba(50,211,201,0.14), transparent 55%),
+              radial-gradient(circle at 85% 10%, rgba(30,166,255,0.10), transparent 50%),
+              linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.78))
+            `,
           }}
         />
 
@@ -82,7 +86,7 @@ export const Navbar = () => {
             alignItems: "center",
           }}
         >
-          {/* LEFT: Copy + CTAs */}
+          {/* LEFT */}
           <div data-aos="fade-up" data-aos-delay="200">
             <h1 style={{ color: "white", fontSize: "44px", lineHeight: 1.1 }}>
               Hudsons Barbershop
@@ -136,7 +140,7 @@ export const Navbar = () => {
             </div>
           </div>
 
-          {/* RIGHT: Image card (uses your existing photo in public/) */}
+          {/* RIGHT image card */}
           <div data-aos="fade-up" data-aos-delay="350">
             <div
               style={{
@@ -161,7 +165,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Responsive layout */}
+        {/* Responsive */}
         <style>
           {`
             @media (max-width: 900px) {
