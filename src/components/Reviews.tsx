@@ -17,8 +17,8 @@ export const Reviews = () => {
   return (
     <section className="reviews">
       <div className="container">
-        <h2 style={{ textAlign: "center" }}>Reviews</h2>
-        <p style={{ textAlign: "center", marginTop: "10px" }}>
+        <h2 style={{ textAlign: "center", color: "white" }}>Reviews</h2>
+        <p style={{ textAlign: "center", marginTop: "10px", color: "white", opacity: 0.9 }}>
           Real clients. Real results.
         </p>
 
@@ -37,12 +37,18 @@ export const Reviews = () => {
                 borderRadius: "16px",
                 padding: "18px",
                 background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.12)",
+                border: "1px solid rgba(255,255,255,0.14)",
               }}
             >
-              <div style={{ fontSize: "18px" }}>★★★★★</div>
-              <p style={{ marginTop: "10px" }}>{r.text}</p>
-              <p style={{ marginTop: "12px", opacity: 0.85 }}>
+              <div style={{ fontSize: "18px", color: "white", letterSpacing: "2px" }}>
+                ★★★★★
+              </div>
+
+              <p style={{ marginTop: "10px", color: "white", opacity: 0.92 }}>
+                {r.text}
+              </p>
+
+              <p style={{ marginTop: "12px", color: "white", opacity: 0.85 }}>
                 <strong>{r.name}</strong>
               </p>
             </div>
