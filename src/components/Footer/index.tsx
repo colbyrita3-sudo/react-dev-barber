@@ -2,39 +2,32 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-content">
-        <h2>Golden Touch Barber Lounge</h2>
+        <h2>Hudsons Barbershop</h2>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
-          995 W Orange Blossom Trail, Apopka, FL 32712
+          515 N Park Ave STE 101, Apopka, FL 32712
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
-          <a href="tel:+14075575702">(407) 557-5702</a>
+          <a href="tel:+14074101316">(407) 410-1316</a>
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
-          Walk-ins welcome • Appointments recommended
+          Walk-ins accepted • Appointments recommended
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
-          Mon–Fri 10:00 AM – 6:30 PM • Sat 10:00 AM – 5:30 PM • Sun Closed
+          Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed • Mon Closed • Tue 11–6 • Wed
+          11–6
         </p>
 
         <p style={{ textAlign: "center", marginTop: "12px" }}>
           <a
-            href="https://www.instagram.com/gt_barberlounge/"
+            href="https://www.instagram.com/hudsons_barbershop25/"
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
-          </a>{" "}
-          •{" "}
-          <a
-            href="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Facebook
+            Instagram: @hudsons_barbershop25
           </a>
         </p>
       </div>
