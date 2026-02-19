@@ -150,7 +150,7 @@ export const Navbar = () => {
               }}
             >
               <img
-                src="/service1.webp"
+                src="hero.webp"
                 alt="Hudsons Barbershop haircut"
                 style={{ width: "100%", height: "280px", objectFit: "cover" }}
               />
