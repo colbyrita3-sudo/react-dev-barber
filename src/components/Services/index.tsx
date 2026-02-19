@@ -1,72 +1,84 @@
 export const Services = () => {
+  const BOOKSY =
+    "https://booksy.com/en-us/1447388_hudsons-barbershop_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnH3Loqm69FZRpimvAb17A3QZIjoxw_twJgbMNA9YYLfUXBZJFFIxspu9TMT0Ul-IlubUcQ4BCNmM_3eh9gUaG7vN_dDvw%3D%3D#ba_s=seo";
+
+  const services = [
+    { name: "Male Haircut", price: "$30", time: "40 min", img: "/service1.webp" },
+    { name: "Haircut + Beard", price: "$40", time: "45 min", img: "/service2.webp" },
+    { name: "Senior's Haircut", price: "$25", time: "30 min", img: "/service3.webp" },
+    { name: "Kid's Haircut", price: "$25", time: "30 min", img: "/service1.webp" },
+    { name: "Men's Cut & Blowdry", price: "$40", time: "40 min", img: "/service2.webp" },
+    { name: "Men's Cut & Color", price: "$95+", time: "1 hr 30 min", img: "/service3.webp" },
+  ];
+
   return (
-    <div>
-      <section className="services">
-        <div className="services-content container">
-          <h2>Services</h2>
-          <p>
-            Walk-ins accepted when available — appointments recommended. Book
-            online for the fastest service and guaranteed time.
-          </p>
+    <section className="services">
+      <div className="services-content container">
+        <h2>Services</h2>
+
+        <p style={{ maxWidth: "820px", margin: "10px auto 0", textAlign: "center" }}>
+          Clean cuts, sharp line-ups, beard work, and style services — done right.
+          <strong> Walk-ins accepted</strong> when available. Appointments recommended.
+        </p>
+
+        <div style={{ textAlign: "center", marginTop: "18px" }}>
+          <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
+            View full menu / Book on Booksy
+          </a>
+        </div>
+      </div>
+
+      <div className="container" style={{ marginTop: "26px" }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "16px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          }}
+        >
+          {services.map((s, idx) => (
+            <div
+              key={idx}
+              data-aos="fade-up"
+              data-aos-delay={120 + idx * 80}
+              style={{
+                borderRadius: "16px",
+                overflow: "hidden",
+                background: "rgba(255,255,255,0.06)",
+                border: "1px solid rgba(255,255,255,0.12)",
+              }}
+            >
+              <img
+                src={s.img}
+                alt={s.name}
+                style={{ width: "100%", height: "160px", objectFit: "cover" }}
+              />
+
+              <div style={{ padding: "14px 14px 16px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}>
+                  <strong style={{ color: "white" }}>{s.name}</strong>
+                  <strong style={{ color: "white" }}>{s.price}</strong>
+                </div>
+
+                <p style={{ marginTop: "6px", color: "white", opacity: 0.85 }}>{s.time}</p>
+
+                <div style={{ marginTop: "12px" }}>
+                  <a className="header-button" target="_blank" rel="noreferrer" href={BOOKSY}>
+                    Book This
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <section className="haircuts">
-          <div className="haircut" data-aos="fade-up" data-aos-delay="150">
-            <img src="/corte1.png" alt="Male haircut" />
-            <div className="haircut-info">
-              <strong>Male Haircut</strong>
-              <button>$30</button>
-            </div>
-          </div>
-
-          <div className="haircut" data-aos="fade-up" data-aos-delay="250">
-            <img src="/corte2.png" alt="Haircut and beard" />
-            <div className="haircut-info">
-              <strong>Haircut + Beard</strong>
-              <button>$40</button>
-            </div>
-          </div>
-
-          <div className="haircut" data-aos="fade-up" data-aos-delay="350">
-            <img src="/corte3.png" alt="Senior haircut" />
-            <div className="haircut-info">
-              <strong>Senior’s Haircut</strong>
-              <button>$25</button>
-            </div>
-          </div>
-
-          <div className="haircut" data-aos="fade-up" data-aos-delay="450">
-            <img src="/corte1.png" alt="Kids haircut" />
-            <div className="haircut-info">
-              <strong>Kid’s Haircut</strong>
-              <button>$25</button>
-            </div>
-          </div>
-
-          <div className="haircut" data-aos="fade-up" data-aos-delay="550">
-            <img src="/corte2.png" alt="Men's cut and blowdry" />
-            <div className="haircut-info">
-              <strong>Men’s Cut & Blowdry</strong>
-              <button>$40</button>
-            </div>
-          </div>
-
-          <div className="haircut" data-aos="fade-up" data-aos-delay="650">
-            <img src="/corte3.png" alt="Men's cut and color" />
-            <div className="haircut-info">
-              <strong>Men’s Cut & Color</strong>
-              <button>$95+</button>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <div className="services">
-        <h2>Walk-ins Accepted</h2>
-        <p style={{ textAlign: "center", marginTop: "12px" }}>
-          Appointments recommended to guarantee your time.
+        <p style={{ textAlign: "center", marginTop: "20px", color: "white", opacity: 0.9 }}>
+          Prefer to call?{" "}
+          <a href="tel:+14074101316" style={{ color: "white", textDecoration: "underline" }}>
+            (407) 410-1316
+          </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
