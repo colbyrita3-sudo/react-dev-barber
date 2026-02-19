@@ -1,5 +1,30 @@
 export const Map = () => {
-    return (
-        <iframe className="map-barber" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.2651080436212!2d-51.41016502577427!3d-22.11586561008182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f43dcb839edf%3A0x4938875dc526bddd!2sPrudenshopping!5e0!3m2!1spt-BR!2sbr!4v1730301958147!5m2!1spt-BR!2sbr" height="450" loading="lazy"></iframe>
-    )
-}
+  return (
+    <section className="map">
+      <div className="container">
+        <h2>Location</h2>
+        <p style={{ textAlign: "center", marginTop: "12px" }}>
+          Golden Touch Barber Studio — walk-ins welcome when available.
+          Appointments recommended.
+        </p>
+
+        <div style={{ marginTop: "24px" }}>
+          {/* Replace the src below with your Google Maps embed link when ready */}
+          <iframe
+            title="Golden Touch Location"
+            src="https://www.google.com/maps?q=Orlando,+FL&output=embed"
+            width="100%"
+            height="350"
+            style={{ border: 0, borderRadius: "12px" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+        <p style={{ textAlign: "center", marginTop: "16px" }}>
+          Mon–Fri 10:00 AM – 6:30 PM • Sat 10:00 AM – 5:30 PM • Sun Closed
+        </p>
+      </div>
+    </section>
+  );
+};
