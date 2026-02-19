@@ -4,14 +4,14 @@ export const Map = () => {
   return (
     <section className="map">
       <div className="container">
-        <h2>Location</h2>
+        <h2 style={{ color: "white" }}>Location</h2>
 
-        <p style={{ textAlign: "center", marginTop: "12px" }}>
+        <p style={{ textAlign: "center", marginTop: "12px", color: "white" }}>
           Hudsons Barbershop — walk-ins accepted when available. Appointments
           recommended.
         </p>
 
-        <p style={{ textAlign: "center", marginTop: "12px" }}>
+        <p style={{ textAlign: "center", marginTop: "12px", color: "white" }}>
           <strong>{address}</strong>
         </p>
 
@@ -44,9 +44,9 @@ export const Map = () => {
           </a>
         </div>
 
-        <p style={{ textAlign: "center", marginTop: "16px" }}>
-          Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed • Mon Closed • Tue 11–6 • Wed
-          11–6
+        <p style={{ textAlign: "center", marginTop: "16px", color: "white" }}>
+          Thu 11–7 • Fri 10–7 • Sat 10–4 • Sun Closed • Mon Closed • Tue 11–6 •
+          Wed 11–6
         </p>
       </div>
     </section>
