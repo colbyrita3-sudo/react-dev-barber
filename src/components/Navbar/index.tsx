@@ -22,16 +22,21 @@ export const Navbar = () => {
                 <div className="header-logo" data-aos="fade-up" data-aos-delay="300">
                     <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="/logo.svg" alt="Logo da barbearia" />
                 </div>
-                <div data-aos="fade-down">
-                    <a
-  className="header-button"
-  target="_blank"
-  rel="noreferrer"
-  href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
->
-  Book Now
-</a>
-                </div>
+             <div data-aos="fade-down" style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+  <a
+    className="header-button"
+    target="_blank"
+    rel="noreferrer"
+    href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
+  >
+    Book Now
+  </a>
+
+  <a className="header-button" href="tel:+14075575702">
+    Call (407) 557-5702
+  </a>
+</div>
+
             </nav>
             <main className="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>Golden Touch Barber Studio</h1>
