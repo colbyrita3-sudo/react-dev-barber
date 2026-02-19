@@ -2,14 +2,23 @@ export const Navbar = () => {
     return (
         <div>
             <nav className="header-content container">
-                <div className="header-icons" data-aos="fade-down">
-                    <a href="#">
-                        <i className="https://www.instagram.com/gt_barberlounge/?hl=en" target="_blank" rel="noreferrer">
-                    </a>
-                    <a href="#">
-                        <i className="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/" target="_blank" rel="noreferrer">
-                    </a>
-                </div>
+               <div className="header-icons" data-aos="fade-down">
+  <a
+    href="https://www.instagram.com/gt_barber_lounge/?hl=en"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <i className="fa-brands fa-instagram fa-2x"></i>
+  </a>
+
+  <a
+    href="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <i className="fa-brands fa-facebook fa-2x"></i>
+  </a>
+</div>
                 <div className="header-logo" data-aos="fade-up" data-aos-delay="300">
                     <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="/logo.svg" alt="Logo da barbearia" />
                 </div>
