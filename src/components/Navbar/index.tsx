@@ -4,13 +4,10 @@ export const Navbar = () => {
             <nav className="header-content container">
                 <div className="header-icons" data-aos="fade-down">
                     <a href="#">
-                        <i className="fa-brands fa-instagram fa-2x"></i>
+                        <i className="https://www.instagram.com/gt_barberlounge/?hl=en" target="_blank" rel="noreferrer">
                     </a>
                     <a href="#">
-                        <i className="fa-brands fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="#">
-                        <i className="fa-brands fa-tiktok fa-2x"></i>
+                        <i className="https://www.facebook.com/p/Golden-Touch-Barber-Lounge-100094509364655/" target="_blank" rel="noreferrer">
                     </a>
                 </div>
                 <div className="header-logo" data-aos="fade-up" data-aos-delay="300">
