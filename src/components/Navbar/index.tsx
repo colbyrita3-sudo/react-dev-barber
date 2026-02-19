@@ -38,19 +38,20 @@ export const Navbar = () => {
 </div>
 
             </nav>
-            <main className="hero container" data-aos="fade-up" data-aos-delay="400">
-                <h1>Golden Touch Barber Studio</h1>
-                <p>Private, luxury grooming — precision cuts, clean fades, and beard artistry.</p>
-                <a
-  className="header-button"
-  target="_blank"
-  rel="noreferrer"
-  href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
->
-  BOOK NOW
-</a>
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+  <a
+    className="header-button"
+    target="_blank"
+    rel="noreferrer"
+    href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo"
+  >
+    BOOK NOW
+  </a>
 
-            </main>
+  <a className="header-button" href="tel:+14075575702">
+    CALL (407) 557-5702
+  </a>
+</div>
         </div>
     )
 }
