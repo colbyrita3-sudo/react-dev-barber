@@ -36,9 +36,15 @@ export const Navbar = () => {
             <main className="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>Golden Touch Barber Studio.</h1>
                 <p>Private, luxury grooming — precision cuts, clean fades, and beard artistry.</p>
-                <a href="https://booksy.com/en-us/792234_golden-touch-barber-lounge_barber-shop_15924_apopka?hl=en-US&rwg_token=AFd1xnF6HRcnhJ3nNaomEc8XYhKS5qtH--UpzKriTYJqjB6PKz25_yaWqvU_4ow_D1tHHJ7xHWjtLNqs38NU1KUM7vW4ZiuuvQ%3D%3D#ba_s=seo" className="button-contact" target="_blank">
-                    BOOK NOW
-                </a>
+                <a
+  className="header-button"
+  target="_blank"
+  rel="noreferrer"
+  href="YOUR_BOOKSY_LINK_HERE"
+>
+  BOOK NOW
+</a>
+
             </main>
         </div>
     )
