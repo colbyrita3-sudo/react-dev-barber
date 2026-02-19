@@ -41,17 +41,16 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* HERO */}
+      {/* HERO (now matches the rest of the site) */}
       <section
         style={{
           position: "relative",
           padding: "56px 0 44px",
-          // NEW: matches your other dark sections better
-          background: "linear-gradient(180deg, #06101d 0%, #071a2a 55%, #07111f 100%)",
+          background: "linear-gradient(180deg, #06101d 0%, #061a2a 100%)",
           overflow: "hidden",
         }}
       >
-        {/* Optional background photo */}
+        {/* Optional background photo: public/hero.webp (kept subtle so it doesn't change the theme color) */}
         <div
           style={{
             position: "absolute",
@@ -59,19 +58,19 @@ export const Navbar = () => {
             backgroundImage: "url(/hero.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.12,
+            opacity: 0.10,
           }}
         />
 
-        {/* NEW: smoother overlay + subtle teal glow */}
+        {/* Overlay + subtle glow (kept in the same palette) */}
         <div
           style={{
             position: "absolute",
             inset: 0,
             background: `
-              radial-gradient(circle at 15% 20%, rgba(50,211,201,0.14), transparent 55%),
-              radial-gradient(circle at 85% 10%, rgba(30,166,255,0.10), transparent 50%),
-              linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.78))
+              radial-gradient(circle at 15% 20%, rgba(50,211,201,0.10), transparent 55%),
+              radial-gradient(circle at 85% 10%, rgba(30,166,255,0.08), transparent 55%),
+              linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75))
             `,
           }}
         />
